@@ -606,13 +606,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'sc':  case 'sourcecode': {
 	        anu = `
-◦ Script : https://github.com/Nando35/ALYAM
-◦ Script ori : https://github.com/DikaArdnt/ALYA-Morou
+◦ Script : https://mez.ink/botwhatsapp
+◦ Script ori : https://mez.ink/botwhatsapp
 
 Jangan lupa kasih bintang.
-◦ Donate : 628125284895 (Dana / gopay)
-◦ Saweria : https://saweria.co/Nando35
-◦ Paypal : https://www.paypal.me/Rifando35
+◦ Donate : 6289516947204 (Dana / gopay)
+◦ Saweria : https://mez.ink/botwhatsapp
+◦ Paypal : https://mez.ink/botwhatsapp
 
 Dont Forget Donate
 `
@@ -630,16 +630,16 @@ case 'tqto': case 'partner': case 'credits': {
 	        anu = `Terima kasih
 
 Dika Ardnt
-◦ https://github.com/DikaArdnt
+◦ https://mez.ink/botwhatsapp
 
 Fatih Arridho
-◦ https://github.com/FatihArridho
+◦ https://mez.ink/botwhatsapp
 
 Whwhwh
-◦ https://github.com/Nando35
+◦ https://mez.ink/botwhatsapp
 
 Alya
-◦ https://github.com/AliyaBot
+◦ https://mez.ink/botwhatsapp
 `
 	                let btn = [{
                                 urlButton: {
@@ -1124,7 +1124,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 *${prefix}hapusvote* - untuk menghapus vote
 
 
-©${ALYA.user.id}
+©${Iyaj.user.id}
 `
 ALYA.sendTextWithMentions(m.chat, teks_vote, m)
 break
@@ -1158,9 +1158,9 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
              if (args[0] === 'open'){
-                await ALYA.groupSettingUpdate(m.chat, 'unlocked').then((res) => m.reply(`Sukses Membuka Edit Info Group`)).catch((err) => m.reply(jsonformat(err)))
+                await iyan.groupSettingUpdate(m.chat, 'unlocked').then((res) => m.reply(`Sukses Membuka Edit Info Group`)).catch((err) => m.reply(jsonformat(err)))
              } else if (args[0] === 'close'){
-                await ALYA.groupSettingUpdate(m.chat, 'locked').then((res) => m.reply(`Sukses Menutup Edit Info Group`)).catch((err) => m.reply(jsonformat(err)))
+                await iyan.groupSettingUpdate(m.chat, 'locked').then((res) => m.reply(`Sukses Menutup Edit Info Group`)).catch((err) => m.reply(jsonformat(err)))
              } else {
              let buttons = [
                         { buttonId: 'editinfo open', buttonText: { displayText: 'Open' }, type: 1 },
